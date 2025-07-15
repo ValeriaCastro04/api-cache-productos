@@ -18,7 +18,8 @@ await this.cacheManager.set(cacheKey, products, { ttl: 30 });
 <h1 align="center">EJERCICIO 2:</h1>
 
 <p align="center">
-El problema era que el cache nunca guardaba ni reutilizaba los datos, pero se resolvio configurando Redis y corregiendo la forma de set(). Se hizo la prueba de ping pong y sí funcionaba, pero al final el error del Ejercicio 1 era lo que ocasionaba que la cache no se guardaba correctamente, por eso con cada GET que se ejecutaba se iba siempre a consultar a la base de datos, pero al corregir el formato del parametro de ya no a number sino a {ttl: 30}, la caché ya se guardaba correctamente dando como respuesta en la terminal:
+El problema era que el cache nunca guardaba ni reutilizaba los datos, pero se resolvio configurando Redis y corregiendo la forma de set(). 
+Se hizo la prueba de ping pong y sí funcionaba, pero al final el error del Ejercicio 1 era lo que ocasionaba que la cache no se guardaba correctamente, por eso con cada GET que se ejecutaba se iba siempre a consultar a la base de datos, pero al corregir el formato del parametro de ya no a number sino a {ttl: 30}, la caché ya se guardaba correctamente dando como respuesta en la terminal:
 <br>
 Nest application successfully started +5ms
 ver cache undefined
