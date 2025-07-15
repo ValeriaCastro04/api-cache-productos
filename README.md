@@ -3,9 +3,9 @@
 </p>
 <h1 align="center">EJERCICIO 1:</h1>
 <p align="center">La línea en product.service.ts:
-//await this.cacheManager.set(cacheKey, products, 30); 
+//await this.cacheManager.set(cacheKey, products, 30); //Esta era la razon por la que la cache no funcionaba correctamente
 <br>
-Era la razon por la que la cache no funcionaba correctamente, ya que pedia un numer como parametro y en redis no es valido porque espera un objeto con opciones, por lo que la forma correcta era {ttl:30}
+El problema era que cached siempre era undefined, ya que pedia un number como parametro y en redis no es valido porque espera un objeto con opciones, por lo que la forma correcta era {ttl:30}
 <br>
 Por lo tanto, se cambió esa línea por una nueva: 
 <br> 
