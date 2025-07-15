@@ -1,6 +1,3 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
 <h1 align="center">EJERCICIO 1:</h1>
 <p align="center">La línea en product.service.ts:
 //await this.cacheManager.set(cacheKey, products, 30); //Esta era la razon por la que la cache no funcionaba correctamente
